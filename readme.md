@@ -1,4 +1,4 @@
-# DfE Architecture
+# Central AI Unit Architecture
 This site documents the architecture principles, standards and guidance that we expect teams working
 within the [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education)
 to follow when designing services.
