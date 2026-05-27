@@ -1,62 +1,37 @@
-# Agents & MCP Guidance for all.
-This site documents the architecture principles, standards and guidance that we expect teams working within the [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) to follow when designing services.
+---
+layout: default
+title: Agentic AI Guidance
+---
 
-It complements the [UK Government Service Manual](https://www.gov.uk/service-manual) and its [technology section](https://www.gov.uk/service-manual/technology), which covers service design more broadly.
+# Agentic AI Guidance (Defra)
 
-It should be used in conjunction with the [DfE Digital Technical Guidance](https://technical-guidance.education.gov.uk), when building digital services.
+This site provides guidance, guardrails, and patterns for designing and delivering agentic AI systems in Defra.
 
-## Reference Architecture
+## What is agentic AI?
 
-- [DfE Target Architecture](reference/dfe-target-architecture.md)
-- [Enterprise Data Model](https://educationgovuk.sharepoint.com/sites/lvedfe00108/SitePages/EDM.aspx)
+Agentic AI systems can:
+- Plan multi-step tasks  
+- Call tools and external services  
+- Interact with users and systems  
 
-## Principles
+Unlike simple AI, agents can take actions — requiring stronger governance and control.
 
-{% assign principle_groups = site.pages
-  | where: "principle", true %}
+## What decisions this guidance supports
 
-{% for principle in principle_groups %}
-- [{{ principle.title }}]({{ principle.url | relative_url }})
-{% endfor %}
-- [Technical Architecture Principles](https://technical-guidance.education.gov.uk/principles/architecture/#technical-architecture-principles)
+- When to use an agent vs workflow vs LLM  
+- Which patterns to use  
+- What controls are required  
+- When MCP (tool use) is appropriate  
+- How to safely operate agents  
 
-## Standards
+## Non-negotiables
 
-{% assign standard_groups = site.pages
-  | where: "standard", true %}
+- Human remains in control for all consequential actions  
+- Data minimisation must be applied  
+- All actions must be logged and auditable  
+- Tool use must be governed  
+- Evaluation and monitoring are mandatory  
 
-{% for standard in standard_groups %}
-- [{{ standard.title }}]({{ standard.url | relative_url }})
-{% endfor %}
-- [Common Components](common-components/)
+## Start here
 
-## Patterns
-
-{% assign pattern_groups = site.pages
-  | where: "pattern", true %}
-
-{% for pattern in pattern_groups %}
-- [{{ pattern.title }}]({{ pattern.url | relative_url }})
-{% endfor %}
-- [User-centred design patterns](https://design.education.gov.uk/design-system/patterns/)
-
-## Governance
-
-- [Design governance](governance/design-governance.md)
-
-## Profession
-
-- [Architecture roles](profession/architecture-roles.md)
-- [Architecture profession](profession/architecture-profession.md)
-- [Architecture community](profession/architecture-community.md)
-- [Architecture Capability Framework](profession/architecture-capability-framework.md)
-
-## Repositories
-
-- [DfE SharePoint repo](https://educationgovuk.sharepoint.com/sites/architecture/WorkplaceDocuments)
-- [DfE Digital Confluence](https://dfedigital.atlassian.net)
-- [ESFA Confluence](https://skillsfundingagency.atlassian.net)
-
-
-
-
+➡️ Decision Framework
