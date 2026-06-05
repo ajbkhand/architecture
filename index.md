@@ -1,37 +1,76 @@
 ---
 layout: default
-title: Agentic AI Guidance
+title: Agentic AI guidance
 ---
 
-# Agentic AI Guidance (Defra)
+# Build and use AI agents in Defra
 
-This site provides guidance, guardrails, and patterns for designing and delivering agentic AI systems in Defra.
+Use this guidance to **design, build and operate agentic AI systems safely**.
 
-## What is agentic AI?
+---
 
-Agentic AI systems can:
-- Plan multi-step tasks  
-- Call tools and external services  
-- Interact with users and systems  
+## Start your project
 
-Unlike simple AI, agents can take actions — requiring stronger governance and control.
+➡️ Decide if you should use an agent  
+➡️ Choose the simplest approach  
+➡️ Apply the right controls  
 
-## What decisions this guidance supports
+👉 {{ '/decision/' | relative_url }}Start here
 
-- When to use an agent vs workflow vs LLM  
-- Which patterns to use  
-- What controls are required  
-- When MCP (tool use) is appropriate  
-- How to safely operate agents  
+---
 
-## Non-negotiables
+## What you need to do
 
-- Human remains in control for all consequential actions  
-- Data minimisation must be applied  
-- All actions must be logged and auditable  
-- Tool use must be governed  
-- Evaluation and monitoring are mandatory  
+All agent systems must:
 
-## Start here
+- ✅ Maintain human control  
+- ✅ Minimise and protect data  
+- ✅ Log all actions and tool use  
+- ✅ Use governed access to models and tools  
+- ✅ Be evaluated before and after deployment  
 
-➡️ Decision Framework
+---
+
+## Choose the right approach
+
+Not all problems need agents.
+
+- Simple workflows → use automation  
+- Knowledge tasks → use retrieval (RAG)  
+- Complex tasks → consider agents  
+
+👉 {{ '/decision/' | relative_url }}Decide if you need an agent
+
+---
+
+## Use proven patterns
+
+Agents should follow standard patterns.
+
+👉 {{ '/patterns/' | relative_url }}Choose a pattern
+
+---
+
+## Integrate safely
+
+Agents interact with models, tools and users.
+
+👉 {{ '/integration/' | relative_url }}Integrate safely
+
+---
+
+## Do
+
+- ✅ Start with simple solutions  
+- ✅ Keep humans in control  
+- ✅ Test before deployment  
+
+## Do not
+
+- ❌ Build agents without clear outcomes  
+- ❌ Use autonomy without controls  
+- ❌ Allow unrestricted access to tools  
+
+---
+
+> Agents must serve people, not replace them.
